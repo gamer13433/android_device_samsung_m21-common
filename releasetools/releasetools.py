@@ -1,5 +1,6 @@
 #!/bin/env python3
 #
+
 # Copyright (C) 2021 The LineageOS Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,10 +34,17 @@ def AddImage(info, basename, dest):
 
 def PrintInfo(info, dest):
   info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
+
+def PrintInfo(info, dest):
+  info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
   
 def OTA_InstallEnd(info):
-    AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
-    AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta")
+  PrintInfo(info, "/dev/block/by-name/dtbo")
+  AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
+  PrintInfo(info, "/dev/block/by-name/vbmeta")
+  AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta")
+  return
 
 def FullOTA_InstallBegin(info):
-    AddImage(info, "super_empty.img", "/dev/block/by-name/super")
+  AddImage(info, "super_empty.img", "/dev/block/by-name/super")
+  return
