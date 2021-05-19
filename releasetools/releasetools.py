@@ -35,7 +35,5 @@ def PrintInfo(info, dest):
   info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
   
 def OTA_InstallEnd(info):
-  PrintInfo(info, "/dev/block/by-name/dtbo")
-  AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
-  AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta_samsung")
-  return
+    AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
+    AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta")
