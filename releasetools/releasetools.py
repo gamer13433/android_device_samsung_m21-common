@@ -37,4 +37,5 @@ def PrintInfo(info, dest):
 def OTA_InstallEnd(info):
   PrintInfo(info, "/dev/block/by-name/dtbo")
   AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
+  AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta_samsung")
   return
