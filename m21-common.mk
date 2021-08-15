@@ -15,12 +15,12 @@
 #
 
 # PROPRIETARY VENDOR FILES #
-$(call inherit-product, vendor/samsung/m30s-common/m30s-common-vendor.mk)
+$(call inherit-product, vendor/samsung/m21-common/m21-common-vendor.mk)
 
 # COMMON_PACKAGES #
-$(call inherit-product, device/samsung/m30s-common/common_packages.mk)
+$(call inherit-product, device/samsung/m21-common/common_packages.mk)
 
-COMMON_PATH := device/samsung/m30s-common
+COMMON_PATH := device/samsung/m21-common
 
 # DENSITY #
 PRODUCT_AAPT_CONFIG := normal

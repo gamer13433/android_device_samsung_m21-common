@@ -91,7 +91,6 @@ vendor/lib/libexynoscamera3.so
 vendor/lib/libgiantmscl.so
 vendor/lib/libhwjpeg.so
 vendor/lib/libremosaic_daemon.so
-vendor/lib/libremosaiclib_s5k3p8sp.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libstagefrighthw.so
 vendor/lib/libuniapi.so
@@ -104,7 +103,6 @@ vendor/lib64/libgiantmscl.so
 vendor/lib64/libhwjpeg.so
 vendor/lib64/libremosaic_daemon.so
 vendor/lib64/libremosaiclib_s5kgm2.so
-vendor/lib64/libremosaiclib_s5k3p8sp.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libuniapi.so
@@ -211,7 +209,7 @@ vendor/firmware/CC_DTCM_CODE_FLASH.bin
 vendor/firmware/CC_ITCM_CODE_FLASH.bin
 vendor/firmware/rtdsp.bin
 vendor/firmware/rtdsp_param.bin
-vendor/firmware/setfile_3p8sp.bin
+vendor/firmware/setfile_hi2021q.bin
 vendor/firmware/setfile_gc5035.bin
 vendor/firmware/setfile_gm2.bin
 vendor/firmware/kernel_bin_enf.bin
@@ -301,9 +299,11 @@ system/lib64/vendor.samsung.hardware.vibrator@2.2.so
 system/lib/vendor.samsung.hardware.vibrator-V1-cpp.so
 system/lib64/vendor.samsung.hardware.vibrator-V1-cpp.so
 vendor/etc/init/vendor.samsung.hardware.vibrator@2.1-service.rc
+vendor/etc/init/vendor.samsung.hardware.vibrator@2.2-service.rc
 vendor/bin/hw/vendor.samsung.hardware.vibrator@2.1-service
 vendor/lib64/vendor.samsung.hardware.vibrator@2.0.so
 vendor/lib64/vendor.samsung.hardware.vibrator@2.1.so
+vendor/lib64/vendor.samsung.hardware.vibrator@2.2.so
 
 # WIDEVINE #
 system/lib/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
